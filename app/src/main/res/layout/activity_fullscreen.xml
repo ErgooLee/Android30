@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.test.android30.draw.DrawLinear xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fullscreenBackgroundColor"
+    android:theme="@style/ThemeOverlay.Android30.FullscreenContainer"
+    android:orientation="vertical"
+    tools:context=".FullscreenActivity">
+
+    <com.test.android30.event.CustomView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="#ffff00"
+        android:keepScreenOn="true" />
+
+    <com.test.android30.draw.DrawView1
+        android:id="@+id/draw_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="#00ffee"
+        android:keepScreenOn="true" />
+
+    <com.test.android30.draw.DrawView2
+        android:id="@+id/draw_2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="#00ff00"
+        android:keepScreenOn="true" />
+
+</com.test.android30.draw.DrawLinear>
