@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/fullscreenBackgroundColor"
-    android:theme="@style/ThemeOverlay.Android30.FullscreenContainer"
+    android:background="#ffffff"
     android:orientation="vertical"
     tools:context=".FullscreenActivity">
 
@@ -12,27 +11,38 @@
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:gravity="center"
-        android:clickable="true"
         android:background="#ffff00"
+        android:clickable="true"
+        android:gravity="center"
         android:keepScreenOn="true" />
 
-    <com.test.android30.draw.DrawView1
-        android:id="@+id/draw_1"
+    <com.test.android30.draw.DrawLinear
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:clickable="true"
-        android:background="#00ffee"
-        android:keepScreenOn="true" />
+        android:layout_height="40dp"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-    <com.test.android30.draw.DrawView2
-        android:id="@+id/draw_2"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:clickable="true"
-        android:background="#00ff00"
-        android:keepScreenOn="true" />
+        <com.test.android30.draw.DrawView1
+            android:id="@+id/draw_1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#00ffee"
+            android:clickable="true"
+            android:gravity="center"
+            android:keepScreenOn="true" />
+
+        <com.test.android30.draw.DrawView2
+            android:id="@+id/draw_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ff00"
+            android:clickable="true"
+            android:gravity="center"
+            android:keepScreenOn="true" />
+
+    </com.test.android30.draw.DrawLinear>
 
 </com.test.android30.draw.DrawLinear>

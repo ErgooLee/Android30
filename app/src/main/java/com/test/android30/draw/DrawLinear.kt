@@ -16,6 +16,6 @@ class DrawLinear @JvmOverloads constructor(
 ) : LinearLayout(context, attrs, defStyleAttr) {
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        Log.i(TAG, "DrawFrame onDraw $canvas")
+        Log.i(TAG, "DrawLinear onDraw $canvas")
     }
 }
